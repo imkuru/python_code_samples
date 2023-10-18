@@ -1,6 +1,12 @@
 import json
 import os
 
+#Mask R CNN için hazırlanan json dosyası içinden veri seçmek için kullanılır.
+
+#örnek: json dosyasının içinde 1000 kayıt olduğunu varsayalım. 
+#Kullanılmak istenen resim dosyaları bir klasöre toplanır.
+#Bu kod ile klasördeki resim dosyalarına ait json verileri alınarak yeni bir json dosyası oluşturulur.
+
 jsondosyaadi = "aaa.json" # tüm işaretli verilerin olduğu json dosyası
 yeni_json_dosyasi = "bbb.json" # yeni oluşturulacak json dosyası
 klasor = r'E:\python\coronary\ydrm75xywg-1\ydrm75xywg-1\test2\test\Yeni klasör' # resimlerin olduğu klasor
