@@ -34,4 +34,4 @@ for sira in json_data:
 yeni_dosya.write("}")
 yeni_dosya.close()
 
-print("Bitti.")
+print("Ayrıştırma Bitti.")
