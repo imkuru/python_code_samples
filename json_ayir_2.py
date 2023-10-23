@@ -8,7 +8,7 @@ import random
 
 ######### PARAMETRE AYARLAMALARI #############################
 
-jsondosyaadi = "/Users/ibrahimkuru/Desktop/coronary şeyleri/coronary/dataset/train.json" # tüm işaretli verilerin olduğu json dosyası
+jsondosyaadi = "train.json" # tüm işaretli verilerin olduğu json dosyası
 yeni_json_dosyasi = "bbb" # yeni oluşturulacak json dosyası
 #train için: bbb_train.json, val için: bbb_val.json gibi dosya oluşturulur.
 
