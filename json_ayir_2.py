@@ -6,13 +6,13 @@ import random
 # belirli yüzdelerde bölmek için kullanılır.
 
 
-#########PARAMETRE AYARLAMALARI #############################
+######### PARAMETRE AYARLAMALARI #############################
 
 jsondosyaadi = "/Users/ibrahimkuru/Desktop/coronary şeyleri/coronary/dataset/train.json" # tüm işaretli verilerin olduğu json dosyası
 yeni_json_dosyasi = "bbb" # yeni oluşturulacak json dosyası
 #train için: bbb_train.json, val için: bbb_val.json gibi dosya oluşturulur.
 
-kayit_sayisi = 2247 # json dosyasının içinden toplam alınacak kayıt sayısını tutar.
+kayit_sayisi = 100 # json dosyasının içinden toplam alınacak kayıt sayısını tutar.
 #8325 dosyadan hazır olan kaç tanesi alınmak isteniyorsa o yazılır.
 
 train_adet = int(kayit_sayisi * 0.8) # istenilen oran yazılarak farklı oranlarda bölünebilir.
@@ -46,7 +46,8 @@ while len(kullanilanlar) < train_adet:
         virgul = ', '
 
 virgul = ''
-for sira in json_data:
+for i in range(1, kayit_sayisi + 1):
+    sira = str(i)
     if sira not in kullanilanlar:
         dt = json_data[sira]
         str_json = json.dumps(dt)
