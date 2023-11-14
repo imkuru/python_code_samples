@@ -1,13 +1,14 @@
 import os
 
-klasor = "/Users/ibrahimkuru/Documents/androidstudio/learnmate/resimler/renkli/araclar/ikitekerli/"
+klasor = '/Users/ibrahimkuru/Desktop/adsız klasör/arkaplan/'
 
 dosyalar = os.listdir(klasor)
 
-yeni_ad = 'arac'
-indeks = 1
+yeni_ad = 'a'
+indeks = 23
 
-emin = input('Emin misiniz? (e)')
+emin = 'e' #input('Emin misiniz? (e)')
+
 if emin == 'e' or emin == 'E':
 
     for dosya in dosyalar:
